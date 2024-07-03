@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="resources/icone.ico" type="image/x-icon">
+    <title>The Coolest Quizzz</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <!-- DIV Container - Para englobar as outras divs, tamanho total da página -->
+    <div id="container">
+
+        <!-- DIV Topo - Para o título e imagens -->
+        <div id="topoTitulo">
+            <center><img src="resources/header.png" alt="header"></center>
+        </div>
+
+        <!-- DIV Perguntas - Para os cards de perguntas -->
+        <div id="meioPerguntas">
+            <center>
+                <span class="perguntas">
+                    <div>
+                        <h4>Pergunta 1</h4>
+                        <h5>Em qual ano a série Rick and Morty foi lançada?</h5>
+                    </div>
+                    <div>
+                        <h4>Pergunta 2</h4>
+                        <h5>Stray é um jogo indie estrelado por qual animal?</h5>
+                    </div>
+                    <div>
+                        <h4>Pergunta 3</h4>
+                        <h5>O gambito da Rainha é uma série sobre qual esporte?</h5>
+                    </div>
+                </span>
+            </center>
+        </div>
+
+        <!-- DIV Labels - Para as labels informativas de escolha -->
+        <div id="meioLabels">
+            <span class="escolhaSuaResposta">
+                <div>
+                    <h4>Escolha sua resposta</h4>
+                </div>
+                <div>
+                    <h4>Escolha sua resposta</h4>
+                </div>
+                <div>
+                    <h4>Escolha sua resposta</h4>
+                </div>
+            </span>
+        </div>
+
+        <!-- DIV Selects - Para os menus de select com as respostas -->
+        <div id="meioSelects">
+            <center>
+                <span class="selecionarRespostas">
+                    <div>
+                        <select name="pergunta1" id="pergunta1">
+                            <option value="">Resposta</option>
+                            <option value="errada">2010</option>
+                            <option value="certa">2013</option>
+                            <option value="errada">2015</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select name="pergunta2" id="pergunta2">
+                            <option value="">Resposta</option>
+                            <option value="errada">Cachorro</option>
+                            <option value="certa">Gato</option>
+                            <option value="errada">Coelho</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select name="pergunta3" id="pergunta3">
+                            <option value="">Resposta</option>
+                            <option value="errada">Pôquer</option>
+                            <option value="errada">Xadrez</option>
+                            <option value="certa">Xadrez</option>
+                        </select>
+                    </div>
+                </span>
+            </center>
+        </div>
+
+        <!-- DIV Resultado - Para a pontuação, resultado e botão de gerar pontos -->
+        <div id="baixoResultado">
+            <img src="resources/icone-direita.png" alt="icone-direita">
+            <img src="resources/icone-esquerda.png" alt="icone-esquerda">
+            <label>Pontuação: </label>
+            <input type="text" id="pontuacao" disabled>
+            <button onclick="calcularPontuacao()">Finalizar quiz</button>
+        </div>
+
+    </div>
+
+    <script src="assets/lógica-quiz.js"></script>
+
+</body>
+</html>

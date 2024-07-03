@@ -12,8 +12,6 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
 }
 
 #topoTitulo {
@@ -30,61 +28,38 @@ html, body {
     font-size: 2em;
 }
 
-#meioPerguntas, #meioLabels, #meioSelects {
+#meioPerguntas {
     display: flex;
-    justify-content: space-between;
-    width: 80%;
-    padding: 20px 60px;
-    box-sizing: border-box;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px;
 }
 
 .pergunta-coluna {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #FFFFFF;
+    background-color: #C8BFE7;
     color: #323233;
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px;
-    width: 28%;
-    box-sizing: border-box;
+    width: 30%;
 }
 
 .pergunta-coluna .pergunta {
     margin-bottom: 10px;
 }
 
-.pergunta-titulo{
-    background-color:  #78459E;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 10px;
-    border-radius: 8px;
-    margin-bottom: 10px;;
-}
-
-.label-coluna, .select-coluna{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #ffffff;
-    padding: 20px;
-    width: 28%;
-    box-sizing: border-box;
-}
-
-.label-coluna .label-resposta, .select-coluna .select-resposta {
+.pergunta-coluna .label-resposta {
     margin-bottom: 10px;
 }
 
-.select-coluna select {
+.pergunta-coluna .select-resposta select {
     width: 100%;
     padding: 10px;
     border-radius: 8px;
     border: none;
     margin: 10px 0;
-    background-color: #C8BFE7;
-    color: #323233;
 }
 
 #baixoResultado {
@@ -122,30 +97,4 @@ html, body {
 
 #baixoResultado button:hover {
     background-color: #B29ACC;
-}
-
-#meioPerguntas > div, #meioLabels > div, #meioSelects > div {
-    margin: 0 10px;
-}
-
-#container > *:not(#baixoResultado) {
-    margin-bottom: 20px;
-}
-
-.select-coluna select {
-    width: 100%;
-    padding: 10px;
-    border-radius: 8px;
-    border: none;
-    margin: 10px 0;
-    background-color: #C8BFE7;
-    color: #323233;
-}
-
-.select-coluna select option {
-    background-color: #C8BFE7;
-    color: #323233;
-}
-.select-coluna select:hover {
-    background-color: #C8BFE7;
 }

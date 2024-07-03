@@ -34,43 +34,26 @@ html, body {
     display: flex;
     justify-content: space-between;
     width: 80%;
-    padding: 20px 60px;
+    padding: 20px 60px; /* Espaço nas laterais */
     box-sizing: border-box;
 }
 
-.pergunta-coluna {
+.pergunta-coluna, .label-coluna, .select-coluna {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #FFFFFF;
+    
     color: #323233;
     padding: 20px;
     border-radius: 8px;
-    width: 28%;
+    width: 28%; /* Ajustar a largura das colunas para caber com o espaçamento */
     box-sizing: border-box;
 }
+
+
 
 .pergunta-coluna .pergunta {
     margin-bottom: 10px;
-}
-
-.pergunta-titulo{
-    background-color:  #78459E;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 10px;
-    border-radius: 8px;
-    margin-bottom: 10px;;
-}
-
-.label-coluna, .select-coluna{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #ffffff;
-    padding: 20px;
-    width: 28%;
-    box-sizing: border-box;
 }
 
 .label-coluna .label-resposta, .select-coluna .select-resposta {
@@ -83,8 +66,6 @@ html, body {
     border-radius: 8px;
     border: none;
     margin: 10px 0;
-    background-color: #C8BFE7;
-    color: #323233;
 }
 
 #baixoResultado {
@@ -124,28 +105,11 @@ html, body {
     background-color: #B29ACC;
 }
 
+/* Espaços adicionais */
 #meioPerguntas > div, #meioLabels > div, #meioSelects > div {
-    margin: 0 10px;
+    margin: 0 10px; /* Espaço entre as colunas */
 }
 
 #container > *:not(#baixoResultado) {
-    margin-bottom: 20px;
-}
-
-.select-coluna select {
-    width: 100%;
-    padding: 10px;
-    border-radius: 8px;
-    border: none;
-    margin: 10px 0;
-    background-color: #C8BFE7;
-    color: #323233;
-}
-
-.select-coluna select option {
-    background-color: #C8BFE7;
-    color: #323233;
-}
-.select-coluna select:hover {
-    background-color: #C8BFE7;
+    margin-bottom: 20px; /* Espaço entre as seções */
 }

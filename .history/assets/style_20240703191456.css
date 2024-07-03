@@ -1,0 +1,101 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Cambria, serif;
+}
+
+#container {
+    height: 100%;
+    background-color: #78459E;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+#topoTitulo {
+    height: 20%;
+    background-color: #78459E;
+    padding: 20px;
+}
+
+#topoTitulo h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+#meioPerguntas {
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #78459E;
+}
+
+.perguntas .pergunta {
+    background-color: #C8BFE7;
+    color: #323233;
+    padding: 10px;
+    border-radius: 8px;
+    width: 25%;
+}
+
+#meioLabels {
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #78459E;
+}
+
+.escolhaSuaResposta .label-resposta {
+    width: 25%;
+}
+
+#meioSelects {
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #78459E;
+}
+
+.selecionarRespostas .select-resposta select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+#baixoResultado {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #78459E;
+}
+
+#baixoResultado .icone {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+
+#baixoResultado input[type="text"] {
+    width: 40px;
+    text-align: center;
+    margin: 0 10px;
+    background-color: #C8BFE7;
+    border: none;
+    border-radius: 8px;
+}
+
+#baixoResultado button {
+    background-color: #C8BFE7;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#baixoResultado button:hover {
+    background-color: #B29ACC;
+}

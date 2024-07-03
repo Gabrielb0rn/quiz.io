@@ -34,7 +34,7 @@ html, body {
     display: flex;
     justify-content: space-between;
     width: 80%;
-    padding: 20px 60px;
+    padding: 20px 60px; /* Espaço nas laterais */
     box-sizing: border-box;
 }
 
@@ -46,7 +46,7 @@ html, body {
     color: #323233;
     padding: 20px;
     border-radius: 8px;
-    width: 28%;
+    width: 28%; /* Ajustar a largura das colunas para caber com o espaçamento */
     box-sizing: border-box;
 }
 

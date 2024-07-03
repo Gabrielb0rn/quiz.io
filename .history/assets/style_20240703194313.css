@@ -34,7 +34,7 @@ html, body {
     display: flex;
     justify-content: space-between;
     width: 80%;
-    padding: 20px 60px;
+    padding: 20px 60px; /* Espaço nas laterais */
     box-sizing: border-box;
 }
 
@@ -46,7 +46,7 @@ html, body {
     color: #323233;
     padding: 20px;
     border-radius: 8px;
-    width: 28%;
+    width: 28%; /* Ajustar a largura das colunas para caber com o espaçamento */
     box-sizing: border-box;
 }
 
@@ -83,8 +83,6 @@ html, body {
     border-radius: 8px;
     border: none;
     margin: 10px 0;
-    background-color: #C8BFE7;
-    color: #323233;
 }
 
 #baixoResultado {
@@ -124,14 +122,16 @@ html, body {
     background-color: #B29ACC;
 }
 
+/* Espaços adicionais */
 #meioPerguntas > div, #meioLabels > div, #meioSelects > div {
-    margin: 0 10px;
+    margin: 0 10px; /* Espaço entre as colunas */
 }
 
 #container > *:not(#baixoResultado) {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Espaço entre as seções */
 }
 
+/* Estilo padrão para o select */
 .select-coluna select {
     width: 100%;
     padding: 10px;
@@ -142,10 +142,18 @@ html, body {
     color: #323233;
 }
 
+/* Estilo para as opções do select */
 .select-coluna select option {
     background-color: #C8BFE7;
     color: #323233;
 }
-.select-coluna select:hover {
+
+/* Estilo para a opção selecionada */
+.select-coluna select option:checked {
+    background-color: #B29ACC;
+}
+
+/* Estilo para a opção ao passar o mouse */
+.select-coluna select option:hover {
     background-color: #C8BFE7;
 }

@@ -28,23 +28,3 @@ function calcularPontuacao() {
         alert("Quiz Finalizado! Confira sua pontuação :)");
     }
 }
-
-document.querySelectorAll('select').forEach(select => {
-    select.addEventListener('mouseover', () => {
-        select.style.backgroundColor = '#C8BFE7';
-    });
-
-    select.addEventListener('mouseout', () => {
-        select.style.backgroundColor = '';
-    });
-
-    select.querySelectorAll('option').forEach(option => {
-        option.addEventListener('mouseover', () => {
-            option.style.backgroundColor = '#C8BFE7';
-        });
-
-        option.addEventListener('mouseout', () => {
-            option.style.backgroundColor = '';
-        });
-    });
-});

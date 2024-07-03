@@ -1,0 +1,58 @@
+html{
+
+    height: 100%;
+
+}
+
+body{
+
+    height: 100%;
+    margin: 0;
+
+}
+
+#container{
+
+    height: 100%;
+    background-color: #78459E;
+
+}
+
+#topoTitulo{
+
+    height: 25%;
+    background-color: #78459E;
+
+}
+
+#meioPerguntas{
+
+    height: 23%;
+    background-color: #78459E;
+
+}
+
+#meioLabels{
+
+    height: 7%;
+    background-color: #78459E;
+
+}
+
+#meioSelects{
+
+    height: 27%;
+    background-color: #78459E;
+
+}
+
+#baixoResultado{
+
+    height: 18%;
+    background-color: #78459E;
+
+}
+
+.perguntas, h5{
+    background-color: aliceblue;
+}

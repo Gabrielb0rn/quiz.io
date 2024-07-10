@@ -1,0 +1,151 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Cambria, serif;
+}
+
+#container {
+    height: 100%;
+    background-color: #78459E;
+    color: #FFFFFF;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#topoTitulo {
+    height: 20%;
+    background-color: #78459E;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#topoTitulo h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+#meioPerguntas, #meioLabels, #meioSelects {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 20px 60px;
+    box-sizing: border-box;
+}
+
+.pergunta-coluna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    color: #323233;
+    padding: 20px;
+    border-radius: 8px;
+    width: 28%;
+    box-sizing: border-box;
+}
+
+.pergunta-coluna .pergunta {
+    margin-bottom: 10px;
+}
+
+.pergunta-titulo{
+    background-color:  #78459E;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;;
+}
+
+.label-coluna, .select-coluna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    padding: 20px;
+    width: 28%;
+    box-sizing: border-box;
+}
+
+.label-coluna .label-resposta, .select-coluna .select-resposta {
+    margin-bottom: 10px;
+}
+
+.select-coluna select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    margin: 10px 0;
+    background-color: #C8BFE7;
+    color: #323233;
+}
+
+#baixoResultado {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+#baixoResultado .icone {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+
+#baixoResultado input[type="text"] {
+    width: 40px;
+    text-align: center;
+    margin: 0 10px;
+    background-color: #C8BFE7;
+    border: none;
+    border-radius: 8px;
+}
+
+#baixoResultado button {
+    background-color: #C8BFE7;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 0 10px;
+}
+
+#baixoResultado button:hover {
+    background-color: #B29ACC;
+}
+
+#meioPerguntas > div, #meioLabels > div, #meioSelects > div {
+    margin: 0 10px;
+}
+
+#container > *:not(#baixoResultado) {
+    margin-bottom: 20px;
+}
+
+.select-coluna select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    margin: 10px 0;
+    background-color: #C8BFE7;
+    color: #323233;
+}
+
+.select-coluna select option {
+    background-color: #C8BFE7;
+    color: #323233;
+}
+.select-coluna select:hover {
+    background-color: #C8BFE7;
+}
